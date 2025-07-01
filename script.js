@@ -110,5 +110,13 @@ const displayFinalResults = () => {
     } else {
       finalMessage += "🤝 It's a tie game!";
     }
-
+    alert(finalMessage)
+};
+//  A Goodbye message
+const thanksForPlaying = () => {
+    alert("Thanks for playing Rock, Paper, Scissors!");
+  };
+  
+  // Start everything
+  initGame()
 
