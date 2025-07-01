@@ -72,4 +72,32 @@ const getPlayerChoice = () => {
     alert("Invalid input. Please enter rock, paper, or scissors.");
     };
 
+// Random computer choice
+const getComputerChoice = () => {
+    const choices = ["rock", "paper", "scissors"];
+    const randomIndex = Math.floor(Math.random() * 3);
+    return choices[randomIndex];
+    };
+    
+    // Compare choices and update scores
+    const playRound = (player, computer) => {
+    let message = `You chose ${player}.\nComputer chose ${computer}.\n`;
+    
+    if (player === computer) {
+    message += "It's a tie!";
+    } else if (
+    (player === "rock" && computer === "scissors") ||
+    (player === "paper" && computer === "rock") ||
+    (player === "scissors" && computer === "paper")
+    ) {
+    humanScore++;
+    message += "You win this round!";
+    } else {
+    computerScore++;
+    message += "Computer wins this round!";
+    }
+    
+    alert(message + `\nScore: You ${humanScore} - ${computerScore} Computer`);
+    };
+
 
