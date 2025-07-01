@@ -99,5 +99,16 @@ const getComputerChoice = () => {
     
     alert(message + `\nScore: You ${humanScore} - ${computerScore} Computer`);
     };
+    // Show final result after 5 rounds
+const displayFinalResults = () => {
+    let finalMessage = `Final Score:\nYou: ${humanScore}\nComputer: ${computerScore}\n`;
+  
+    if (humanScore > computerScore) {
+      finalMessage += "🎉 You win the game!";
+    } else if (computerScore > humanScore) {
+      finalMessage += "💻 Computer wins the game!";
+    } else {
+      finalMessage += "🤝 It's a tie game!";
+    }
 
 
