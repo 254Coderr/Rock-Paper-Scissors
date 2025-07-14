@@ -114,7 +114,7 @@ const displayFinalResults = () => {
 };
 //  A Goodbye message
 const thanksForPlaying = () => {
-    alert("Thanks for playing Rock, Paper, Scissors!");
+    alert("Julius says, Thanks for playing Rock, Paper, Scissors!");
   };
   
   // Start everything
